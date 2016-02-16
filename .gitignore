@@ -10,3 +10,9 @@ Thumbs.db
 .fseventsd
 .TemporaryItems
 .VolumeIcon.icns
+
+.bash_history
+.bash_sessions
+.viminfo
+.ssh
+.cache

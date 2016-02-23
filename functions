@@ -1,0 +1,58 @@
+# Functions
+#-------------------- 
+
+# Create a directory and cd into it
+mcd() {
+	mkdir -p "$@" && cd "$_";
+}
+
+# Opens the current directory a given location in Finder
+op() {
+	if [ $# -eq 0 ]; then
+		open .;
+	else
+		open "$@";
+	fi;
+}
+
+# Make files
+#
+
+# Make N files 
+#
+
+# cd into the foremost active Finder window.
+cdf() {
+  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
+
+# Show/hide hidden files
+fl () {
+	if [ "${1:-h}" == "s" ]; then
+		defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder;
+	else
+		defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder;
+	fi;
+}
+
+# Open man page as PDF
+man2pdf() {
+    man -t "$1" | open -f -a /Applications/Preview.app/
+}
+
+# Starts a PHP server from a directory with an optional port
+phpserv() {
+	local port="${1:-4000}";
+	local ip=$(ipconfig getifaddr en0);
+	sleep 1 && open "http://${ip}:${port}/" &
+	php -S "${ip}:${port}";
+}
+
+# Opens the current dir or a given location in Sublime Text
+sl() {
+	if [ $# -eq 0 ]; then
+		sublime .;
+	else
+		sublime "$@";
+	fi;
+}

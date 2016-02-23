@@ -1,0 +1,39 @@
+# Aliases
+#-------------------- 
+
+## Filesystem & Navigation
+alias rm='rm -iv'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias mkdir='mkdir -p'
+alias nitems='echo $(ls -1 | wc -l)' # Num of non-hidden files 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias la="ls -a"
+alias lal="ls -al"
+
+alias _="sudo"
+alias q="exit"
+alias h='history'
+alias c='clear'
+alias r='reset'
+alias path='echo -e ${PATH//:/\\n}'
+alias reload=". ~/.bash_profile"
+
+## WEB DEV
+alias edit='sublime'
+alias snano='sudo nano'
+alias vi='vim'
+alias g='git'
+
+alias sassw='sass --watch'
+alias jadew='jade -w'
+alias jekyllsw='jekyll serve --watch'
+
+# Composer
+alias co='composer'
+
+# NGINX
+# alias nginxs=
+# alias nginxp=
+# alias nginxr=

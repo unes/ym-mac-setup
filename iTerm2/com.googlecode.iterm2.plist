@@ -315,9 +315,9 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>435 146 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>87 371 713 400 0 0 1440 877 </string>
+	<string>170 371 713 400 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>152 335 713 400 0 0 1440 877 </string>
+	<string>271 113 713 400 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -493,7 +493,7 @@
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
-			<false/>
+			<true/>
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
@@ -534,7 +534,7 @@
 				<real>0.99659550189971924</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>2</integer>
+			<integer>0</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -1218,7 +1218,7 @@
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
-			<false/>
+			<true/>
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
@@ -1821,7 +1821,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/ASD/Documents/Spring/PWork/_ePerso/um-mac-setup/iTerm2</string>
+	<string>/Users/ASD/um-mac-setup/iTerm2</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>

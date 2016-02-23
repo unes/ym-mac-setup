@@ -10,9 +10,9 @@ Thumbs.db
 .fseventsd
 .TemporaryItems
 .localized
-
 .bash_history
 .bash_sessions
 .viminfo
 .ssh
 .cache
+.backup

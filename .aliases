@@ -1,0 +1,58 @@
+# Aliases
+#-------------------- 
+
+## Filesystem & Navigation
+alias rm='rm -iv'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias mkdir='mkdir -p'
+alias nitems='echo $(ls -1 | wc -l)' # Num of non-hidden files 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias la="ls -a"
+alias lal="ls -al"
+
+alias _="sudo"
+alias q="exit"
+alias h='history'
+alias c='clear'
+alias r='reset'
+alias path='echo -e ${PATH//:/\\n}'
+alias reload=". ~/.bash_profile"
+
+# OS
+alias nosleep="caffeinate -u -t 3600"
+alias mute="osascript -e 'set volume output muted true'"
+
+# Editing
+# alias sn='_ nano' # sudo nano
+alias edit='sublime' # you may have 'subl'
+alias e_bash="edit ~/.bash_profile"
+alias e_hosts='_ edit /etc/hosts'
+alias e_apache="edit /etc/apache2/httpd.conf"
+alias e_vhosts="edit /etc/apache2/extra/httpd-vhosts.conf"
+alias e_nginx='edit /usr/local/etc/nginx/nginx.conf'
+alias e_php='edit /etc/php.ini'
+
+## WEB DEV
+alias vi='vim'
+alias g='git'
+
+alias sassw='sass --watch'
+alias jadew='jade -w'
+alias jk='jekyll'
+alias jkserve='jk serve --watch'
+alias mid='middleman'
+alias ca='cactus'
+
+# Apache
+# alias apachestart=
+# alias apacherestart=
+# alias apachestop=
+
+# NGINX
+alias nginx_r='open /usr/local/var/www' # NGINX root
+alias nginx_re='_ nginx -s reload' # reload NGINX config
+
+# Composer
+alias co='composer'

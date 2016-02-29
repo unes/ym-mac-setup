@@ -1,1 +1,34 @@
+[user]
+  name = Unes
+  email = unes@example.com
 
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  interactive = auto
+  ui = auto
+
+[init]
+  templatedir = ~/.git_template
+
+[merge]
+  summary = true
+
+[alias]
+  aa = add --all
+  com = commit
+  bra = branch
+  sta = status
+  che = checkout
+  pul = pull
+  pus = push
+
+[core]
+	excludesfile = /Users/unes/.gitexcludes
+
+[difftool]
+	prompt = true
+
+[push]
+	default = tracking

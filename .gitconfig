@@ -17,12 +17,10 @@
 
 [alias]
   aa = add --all
-  com = commit
-  bra = branch
-  sta = status
-  che = checkout
-  pul = pull
-  pus = push
+  co = commit
+  br = branch
+  st = status
+  ch = checkout
 
 [core]
 	excludesfile = /Users/unes/.gitexcludes

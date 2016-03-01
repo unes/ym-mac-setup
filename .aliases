@@ -45,13 +45,13 @@ alias jkserve='jk serve --watch'
 alias mid='middleman'
 alias ca='cactus'
 
-# Apache
-# alias apachestart=
-# alias apacherestart=
-# alias apachestop=
+# Apache (default)
+alias apache_s='_ apachectl start'
+alias apache_st='_ apachectl stop'
+alias apache_re='_ apachectl restart'
 
 # NGINX
-alias nginx_r='open /usr/local/var/www' # NGINX root
+alias nginx_r='open /usr/local/var/www' # open NGINX root in finder
 alias nginx_re='_ nginx -s reload' # reload NGINX config
 
 # Composer

@@ -30,4 +30,3 @@ Thumbs.db
 *.sublime-*
 *~.nib
 *.xcworkspace
-!default.xcworkspace

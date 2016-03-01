@@ -1,0 +1,17 @@
+# Colours
+#-------------------- 
+
+# Usage: 
+#	echo "${tbold}This is bold text ${treset}"
+# 	${treset} will reset the terminal.
+
+tunder=$(tput sgr 0 1)     # Underline
+tbold=$(tput bold)         # Bold
+tred=$(tput setaf 1)       # Red
+tgreen=$(tput setaf 2)     # Green
+tyellow=$(tput setaf 3)    # Yellow
+tblue=$(tput setaf 4)      # Blue
+tpurple=$(tput setaf 5)    # Purple
+tcyan=$(tput setaf 6)      # Cyan
+twhite=$(tput setaf 7)     # White
+treset=$(tput sgr0)        # Reset

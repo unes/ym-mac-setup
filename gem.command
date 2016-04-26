@@ -1,9 +1,7 @@
 #!/bin/bash
 
-sudo -v
-
 # Update 
-gem update --system
+sudo gem update --system
 
 # Cleaning after updating
 gem cleanup
